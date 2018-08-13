@@ -16,7 +16,7 @@ public class HelloWorldServlet extends HttpServlet {
         String password = request.getParameter("pwd");
         try (PrintWriter out = response.getWriter()) {
             if ("12345".equals(password)){
-                out.append("You are logged in"+username);
+                out.append("You are loggedd in"+username);
             }else{
                 out.append("Wrong password");
             }
